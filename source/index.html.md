@@ -677,8 +677,10 @@ Example response
         "create_date": "2017-02-02 07:56:00",
         "uuid": "91e03d34-1929-4a02-9486-4c3e708686b3",
         "with_documents": true,
+        "status": "active",
         "state": "open",
         "is_group": false,
+        "is_read": true,
         "groups": [],
         "docs:":
         [
@@ -693,12 +695,24 @@ Example response
             {
                 "im_status": "away",
                 "id": 5,
-                "name": "Lucid Lynx"
+                "name": "Lucid Lynx",
+                "last_message": 
+                {
+                    "message": "222", 
+                    "create_date": "2017-04-10 07:46:21", 
+                    "id": 191
+                }
             },
             {
                 "im_status": "away",
                 "id": 6,
-                "name": "Oneiric Ocelot"
+                "name": "Oneiric Ocelot",
+                "last_message": 
+                {
+                    "message": "444", 
+                    "create_date": "2017-04-10 07:50:40", 
+                    "id": 201
+                }
             }
         ]
     }
@@ -728,7 +742,13 @@ Parameter | Description | Possible values
 uuid | session uuid | *
 create_date | date of session creating | *
 users | list of users | *
+groups | list of groups | *
+docs | list of documents | *
 state | state of session | 'open', 'folded' or 'closed'
+status | status of chat | 'active', 'favorite' or 'archive'
+with_documents | attribute of chat with document | true or false
+is_group | attribute of group session | true or false
+is_read | attribute of read chat | true or false
 
 # Get sessions with group
 
@@ -744,9 +764,11 @@ Example response
         "create_date": "2017-02-02 07:56:00",
         "uuid": "91e03d34-1929-4a02-9486-4c3e708686b3",
         "with_documents": true,
+        "status": "favorite",
         "state": "open",
         "is_group": true,
-        "groups": 
+        "is_read": true,
+        "groups":
         [
             {
                 "id": 3,
@@ -766,12 +788,24 @@ Example response
             {
                 "im_status": "away",
                 "id": 5,
-                "name": "Lucid Lynx"
+                "name": "Lucid Lynx",
+                "last_message": 
+                {
+                    "message": "222", 
+                    "create_date": "2017-04-10 07:46:21", 
+                    "id": 191
+                }
             },
             {
                 "im_status": "away",
                 "id": 6,
-                "name": "Oneiric Ocelot"
+                "name": "Oneiric Ocelot",
+                "last_message": 
+                {
+                    "message": "444", 
+                    "create_date": "2017-04-10 07:50:40", 
+                    "id": 201
+                }
             }
         ]
     }
@@ -801,7 +835,13 @@ Parameter | Description | Possible values
 uuid | session uuid | *
 create_date | date of session creating | *
 users | list of users | *
+groups | list of groups | *
+docs | list of documents | *
 state | state of session | 'open', 'folded' or 'closed'
+status | status of chat | 'active', 'favorite' or 'archive'
+with_documents | attribute of chat with document | true or false
+is_group | attribute of group session | true or false
+is_read | attribute of read chat | true or false
 
 # Get all users
 

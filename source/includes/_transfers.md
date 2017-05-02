@@ -1,10 +1,10 @@
 # Get user transfers
-> `POST https://domain.com/user/transfers/1.0/json`
+> `POST https://domain.com/user/transfers`
 
 Get user transfers
 
 ### HTTP Request
-`POST /user/transfers/1.0/json`
+`POST /user/transfers`
 
 ```
 Response example

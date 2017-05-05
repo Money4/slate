@@ -235,3 +235,28 @@ debit_from | string | Required | id of account to credit BTC from
 deposit_to | string | Required | id of account to deposit EUR to
 code_id | string | | code id reference to verify
 code | string | | code to verify and confirm transaction
+
+## Get historical rate
+> `POST https://domain.com/get_historical_rate`
+
+```
+Response example
+```
+
+```json
+{
+  "jsonrpc": "2.0",
+  "id": null,
+  "result": [
+    {"2017-03-24 21:16:29": 0.001133},
+  ]
+}
+```
+
+Method to return historical rate for EUR to BTC for past 30 days.
+Returns array of dicts with datetime as keys and rate as values.
+
+> We suppose to store rate every minute, but not to overweight db we only keep changed values in time.
+
+### HTTP Request
+`POST /get_historical_rate`

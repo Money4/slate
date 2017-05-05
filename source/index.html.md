@@ -11,6 +11,7 @@ includes:
   - accounts
   - card_to_card
   - making_requests
+  - transfers
   - buy_sell_bitcoin
   - chat
 

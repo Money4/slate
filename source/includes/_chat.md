@@ -90,7 +90,13 @@ Parameter | Description | Possible values
 uuid | session uuid | *
 create_date | date of session creating | *
 users | list of users | *
+groups | list of groups | *
+docs | list of documents | *
 state | state of session | 'open', 'folded' or 'closed'
+status | status of chat | 'active', 'favorite' or 'archive'
+with_documents | attribute of chat with document | true or false
+is_group | attribute of group session | true or false
+is_read | attribute of read chat | true or false
 
 
 # Get or create session with group
@@ -192,7 +198,13 @@ Parameter | Description | Possible values
 uuid | session uuid | *
 create_date | date of session creating | *
 users | list of users | *
+groups | list of groups | *
+docs | list of documents | *
 state | state of session | 'open', 'folded' or 'closed'
+status | status of chat | 'active', 'favorite' or 'archive'
+with_documents | attribute of chat with document | true or false
+is_group | attribute of group session | true or false
+is_read | attribute of read chat | true or false
 
 # Get sessions
 

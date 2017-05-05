@@ -14,8 +14,10 @@ Example response
         "create_date": "2017-02-02 07:56:00",
         "uuid": "91e03d34-1929-4a02-9486-4c3e708686b3",
         "with_documents:": true,
+        "status": "active",
         "state": "open",
         "is_group": false,
+        "is_read": true,
         "groups": [],
         "docs:":
         [
@@ -108,8 +110,10 @@ Example response
         "create_date": "2017-02-02 07:56:00",
         "uuid": "91e03d34-1929-4a02-9486-4c3e708686b3",
         "with_documents": true,
+        "status": "active",
         "state": "open",
         "is_group": true,
+        "is_read": true,
         "groups":
         [
             {
@@ -303,7 +307,7 @@ Example response
         "create_date": "2017-02-02 07:56:00",
         "uuid": "91e03d34-1929-4a02-9486-4c3e708686b3",
         "with_documents": true,
-        "status": "favorite",
+        "status": "active",
         "state": "open",
         "is_group": true,
         "is_read": true,

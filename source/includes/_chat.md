@@ -38,6 +38,7 @@ Example response
                 ),
                 "last_message": 
                 {
+                    "type": "message",
                     "message": "222", 
                     "create_date": "2017-04-10 07:46:21", 
                     "id": 191
@@ -54,6 +55,7 @@ Example response
                 ),
                 "last_message": 
                 {
+                    "type": "message",
                     "message": "444", 
                     "create_date": "2017-04-10 07:50:40", 
                     "id": 201
@@ -136,6 +138,7 @@ Example response
                 ),
                 "last_message": 
                 {
+                    "type": "message",
                     "message": "222", 
                     "create_date": "2017-04-10 07:46:21", 
                     "id": 191
@@ -152,6 +155,7 @@ Example response
                 ),
                 "last_message": 
                 {
+                    "type": "message",
                     "message": "444", 
                     "create_date": "2017-04-10 07:50:40", 
                     "id": 201
@@ -226,6 +230,7 @@ Example response
                 ),
                 "last_message": 
                 {
+                    "type": "message",
                     "message": "222", 
                     "create_date": "2017-04-10 07:46:21", 
                     "id": 191
@@ -242,6 +247,7 @@ Example response
                 ),
                 "last_message": 
                 {
+                    "type": "message",
                     "message": "444", 
                     "create_date": "2017-04-10 07:50:40", 
                     "id": 201
@@ -329,6 +335,7 @@ Example response
                 ),
                 "last_message": 
                 {
+                    "type": "message",
                     "message": "222", 
                     "create_date": "2017-04-10 07:46:21", 
                     "id": 191
@@ -345,6 +352,7 @@ Example response
                 ),
                 "last_message": 
                 {
+                    "type": "message",
                     "message": "444", 
                     "create_date": "2017-04-10 07:50:40", 
                     "id": 201

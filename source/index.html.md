@@ -520,3 +520,73 @@ status | status of creating process | 'success' or 'error'
 field | field, which contains error | *
 message | error message | *
 
+
+# Get user notifications
+
+> `POST http://domain.com/user/notifications`
+
+```
+Response example
+```
+
+```json
+{
+    "id": 325135889,
+    "jsonrpc": "2.0",
+    "result": {
+        "messages": [
+            {
+                "date": "2016-08-11 17:43:46",
+                "is_read": false,
+                "msg_id": 733,
+                "operation_id": "495a5420",
+                "subject": " You have received a loan provision offer",
+                "url": "/user/credits",
+                "userpic": "/partner/1/profile_image"
+            },
+            {
+                "date": "2016-08-11 10:57:40",
+                "is_read": false,
+                "msg_id": 722,
+                "operation_id": "e804968c",
+                "subject": " You have received the loan",
+                "url": "/user/credits",
+                "userpic": "/partner/1654/profile_image"
+            },
+            {
+                "date": "2016-08-11 10:44:10",
+                "is_read": false,
+                "msg_id": 717,
+                "operation_id": "ac438934",
+                "subject": " You created loan request",
+                "url": "/user/credits",
+                "userpic": "/partner/1/profile_image"
+            },
+            {
+                "date": "2016-08-11 10:43:23",
+                "is_read": false,
+                "msg_id": 716,
+                "operation_id": "d49dfd54",
+                "subject": " You have cancelled your loan request",
+                "url": "/user/credits",
+                "userpic": "/partner/1/profile_image"
+            },
+            {
+                "date": "2016-07-28 13:39:42",
+                "is_read": false,
+                "msg_id": 388,
+                "operation_id": "bcd15445",
+                "subject": " The loan request publication term has expired",
+                "url": "/user/credits",
+                "userpic": "/partner/1/profile_image"
+            }
+        ],
+        "new_count": 10
+    }
+}
+```
+
+### HTTP Request
+
+`POST http://domain.com/user/notifications`
+>>>>>>> added api documentation for user notifications

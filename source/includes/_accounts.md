@@ -123,3 +123,95 @@ Response example
 }
 ```
 
+# Get deposit methods
+
+> `POST http://domain.com/user/get_deposit_methods`
+
+```
+Successful response
+```
+
+```json
+{
+    "id": null,
+    "jsonrpc": "2.0",
+    "result":
+    {
+        "status": "success",
+        "deposit_methods":
+        [
+            {
+                "id": 15,
+                "deposit_method": "Swedbank NOK Normal",
+                "bank_name": "Swedbank",
+                "bank_country": "Finland",
+                "bank_street": "Ilveskatu 5",
+                "bank_city": "Helsinki",
+                "bic": "SWED",
+                "currency": "NOK",
+                "int_bank_account": "FI33 0017 2247 0173 58",
+                "int_bank_swift": "SWED",
+                "int_bank": "Swedbank",
+                "account_number": "FI33 0017 2247 0173 58",
+                "account_owner": "Baltic Soft",
+                "bank_code": "001",
+                "bank_zip": false,
+                "external_notes": "Swedbank External Notes",
+                "help": "Swedbank Help"
+            }
+        ]
+    }
+}
+```
+
+```
+Unsuccessful response
+```
+
+```json
+{
+    "jsonrpc": "2.0", 
+    "id": null, 
+    "result": 
+    {
+        "status": "error",
+        "message": "Managing company is not found"
+    }
+}
+```
+
+### HTTP Request
+
+`POST http://domain.com/user/get_deposit_methods`
+
+### Arguments
+
+Parameter | Type | Required | Description
+--------- | ----------- | ----------- | -----------
+currency | string | Optional | Currency name
+
+### Returns
+Dictionary with list with data about available deposit methods.
+
+Contains fields:
+
+Parameter | Description | Possible values 
+--------- | ----------- | -----------
+id | method id | *
+deposit_method | method name | *
+bank_name | bank name | *
+bank_country | bank address: country | *
+bank_street | bank address: street | *
+bank_city | bank address: city | *
+bank_zip | bank address: post index | *
+bic | bank identification code | *
+bank_code | bank code | *
+int_bank_account | intermediary bank account number | *
+int_bank_swift | intermediary bank SWIFT code | *
+int_bank | intermediary bank name | *
+currency | currency name | *
+account_number | account number | *
+account_owner | account owner | *
+external_notes | bank external notes | *
+help | bank help information | *
+

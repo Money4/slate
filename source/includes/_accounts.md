@@ -142,6 +142,7 @@ Successful response
         [
             {
                 "id": 15,
+                "partner_id": 13,
                 "deposit_method": "Swedbank NOK Normal",
                 "bank_name": "Swedbank",
                 "bank_country": "Finland",
@@ -149,6 +150,7 @@ Successful response
                 "bank_city": "Helsinki",
                 "bic": "SWED",
                 "currency": "NOK",
+                "currency_symbol": "kr",
                 "int_bank_account": "FI33 0017 2247 0173 58",
                 "int_bank_swift": "SWED",
                 "int_bank": "Swedbank",
@@ -157,7 +159,9 @@ Successful response
                 "bank_code": "001",
                 "bank_zip": false,
                 "external_notes": "Swedbank External Notes",
-                "help": "Swedbank Help"
+                "help": "Swedbank Help",
+                "reference": "nordea.no",
+                "minimum": 50
             }
         ]
     }
@@ -198,6 +202,7 @@ Contains fields:
 Parameter | Description | Possible values 
 --------- | ----------- | -----------
 id | method id | *
+partner_id | current partner id | *
 deposit_method | method name | *
 bank_name | bank name | *
 bank_country | bank address: country | *
@@ -210,8 +215,11 @@ int_bank_account | intermediary bank account number | *
 int_bank_swift | intermediary bank SWIFT code | *
 int_bank | intermediary bank name | *
 currency | currency name | *
+currency_symbol | currency symbol | *
 account_number | account number | *
 account_owner | account owner | *
 external_notes | bank external notes | *
 help | bank help information | *
+reference | account reference | *
+minimum | minimum sum in current currency | *
 

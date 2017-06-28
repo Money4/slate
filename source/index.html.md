@@ -75,6 +75,15 @@ Parameter | Type | Required | Description
 --------- | ----------- | ----------- | -----------
 login | string | Required | User's email
 password | string | Required | User's password
+device_type | number | Optional | Device type
+identifier | string | Optional | Push notification identifier from Google or Apple
+language | string | Optional | Language code
+timezone | number | Optional | Number of seconds away from UTC
+app_version | string | Optional | Application version
+device_model | string | Optional | Device make and model
+device_os | string | Optional | Device operating system version
+
+Specification for device properties are related to [OneSignal API](https://documentation.onesignal.com/reference#add-a-device)
 
 # Logout
 
@@ -207,15 +216,6 @@ surname | string | Required | User's surname
 password | string | Required | Password 
 confirm_password | string | Required | Password confirmation
 country | number | Required | Country id
-device_type | number | Optional | Device type
-identifier | string | Optional | Push notification identifier from Google or Apple
-language | string | Optional | Language code
-timezone | number | Optional | Number of seconds away from UTC
-app_version | string | Optional | Application version
-device_model | string | Optional | Device make and model
-device_os | string | Optional | Device operating system version
-
-Specification for device properties are related to [OneSignal API](https://documentation.onesignal.com/reference#add-a-device)
 
 # Get active countries
 
